@@ -1,4 +1,5 @@
 /* Root Variables */
+/* Root Variables */
 :root {
   /* Light Mode */
   --bg-color: #f8f9fa;
@@ -9,6 +10,11 @@
   --button-hover: #5E4754;
   --border-color: #e0e0e0;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --card-bg-color: #fff; /* Card background color */
+  --card-title-color: #333; /* Title color for cards */
+  --card-description-color: #666; /* Description color for cards */
+  --modal-title-color: #333; /* Title color for modal */
+  --modal-description-color: #666; /* Description color for modal */
 }
 
 /* Dark Mode */
@@ -21,6 +27,11 @@
   --button-hover: #3A6A68;
   --border-color: #333;
   --shadow-color: rgba(0, 0, 0, 0.3);
+  --card-bg-color: #333; /* Card background color in dark mode */
+  --card-title-color: #FFF; /* Title color for cards in dark mode */
+  --card-description-color: #CCC; /* Description color for cards in dark mode */
+  --modal-title-color: #FFF; /* Title color for modal in dark mode */
+  --modal-description-color: #CCC; /* Description color for modal in dark mode */
 }
 
 body {
@@ -45,7 +56,6 @@ section {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease-out forwards;
-  padding: 20px 5%; /* Reduced padding */
   text-align: center;
   transition: all 0.3s ease-in-out;
   max-width: 100%; /* Ensure content doesn't overflow */

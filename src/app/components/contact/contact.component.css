@@ -1,4 +1,74 @@
-.contact {
+/* Contact Section */
+#contact {
+  background-color: var(--bg-color);
   text-align: center;
-  padding: 50px;
+  padding: 50px 5%;
+}
+
+/* Container */
+#contact .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Heading */
+#contact h2 {
+  font-size: 2.2rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+/* Description */
+#contact p {
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-bg);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+/* Hover Effects */
+.contact-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.contact-item:hover i {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

@@ -1,11 +1,49 @@
-<section class="skills">
+<section id="skills">
   <h2>Skills</h2>
-  <ul>
-    <li>Angular</li>
-    <li>Laravel</li>
-    <li>JavaScript</li>
-    <li>HTML & CSS</li>
-    <li>MySQL</li>
-    <li>REST APIs</li>
-  </ul>
+  <div class="skills-container">
+    <div class="skill-card" (click)="openPopup('angular')">
+      <i class="fab fa-angular skill-icon"></i>
+      <h3 class="skill-title">Angular</h3>
+      <p class="skill-level">Advanced</p>
+    </div>
+
+    <div class="skill-card" (click)="openPopup('laravel')">
+      <i class="fab fa-php skill-icon"></i>
+      <h3 class="skill-title">PHP & Laravel</h3>
+      <p class="skill-level">Advanced</p>
+    </div>
+
+    <div class="skill-card" (click)="openPopup('mysql')">
+      <i class="fas fa-database skill-icon"></i>
+      <h3 class="skill-title">MySQL</h3>
+      <p class="skill-level">Advanced</p>
+    </div>
+
+    <div class="skill-card" (click)="openPopup('git')">
+      <i class="fab fa-github skill-icon"></i>
+      <h3 class="skill-title">Git & GitHub</h3>
+      <p class="skill-level">Advanced</p>
+    </div>
+
+    <div class="skill-card" (click)="openPopup('docker')">
+      <i class="fab fa-docker skill-icon"></i>
+      <h3 class="skill-title">Docker</h3>
+      <p class="skill-level">Familiar with</p>
+    </div>
+
+    <div class="skill-card" (click)="openPopup('aws')">
+      <i class="fab fa-aws skill-icon"></i>
+      <h3 class="skill-title">AWS</h3>
+      <p class="skill-level">Familiar with</p>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div class="modal" [ngClass]="{ 'show': isModalOpen }" (click)="closePopup()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h3>{{ selectedSkill?.title }}</h3>
+      <p>{{ selectedSkill?.description }}</p>
+      <button (click)="closePopup()">Close</button>
+    </div>
+  </div>
 </section>

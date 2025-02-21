@@ -1,4 +1,156 @@
-.about {
+/* About Section */
+#about {
+  background-color: var(--bg-color);
+  padding: 20px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 2s ease-out forwards; /* 'forwards' ensures it stays visible after animation */
+}
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+#about .header {
   text-align: center;
-  padding: 50px;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+#about .header h2 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transform: translateY(-20px);
+  animation: slideIn 1.5s ease-out forwards; /* 'forwards' keeps the final state after animation */
+}
+
+#about .header .sub-heading {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+  transform: translateY(-20px);
+  animation: slideIn 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+#about .about-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  transform: translateY(-20px);
+  animation: slideIn 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+#about .about-details .left {
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#about h3 {
+  font-size: 1.6rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+#about .cta-button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+button i {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+button:hover i {
+  transform: rotate(360deg);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  #about .about-details {
+    flex-direction: column;
+  }
+
+  #about .about-details .left {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  button {
+    width: 80%;
+    font-size: 1.1rem;
+  }
 }

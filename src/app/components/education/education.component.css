@@ -1,0 +1,102 @@
+/* Education Section */
+#education {
+  background-color: var(--bg-color);
+  padding: 50px 5%;
+  text-align: center;
+}
+
+/* Container */
+#education .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Section Header */
+#education .header h2 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Education & Certifications Wrapper */
+#education .education-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Education & Certifications Sections */
+#education .education,
+#education .certifications {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+/* Section Titles */
+#education h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+#education .education-list,
+#education .certifications-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual List Items */
+#education .education-list li,
+#education .certifications-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+/* Hover Effect */
+#education .education-list li:hover,
+#education .certifications-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons */
+#education .icon {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+/* Content */
+#education .content h4 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+#education .content p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  margin: 5px 0 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #education .education-details {
+    flex-direction: column;
+  }
+}

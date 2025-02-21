@@ -1,1 +1,195 @@
-/* You can add global styles to this file, and also import other style files */
+/* Root Variables */
+:root {
+  /* Light Mode */
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #6C5B7B;
+  --secondary-text-color: #666;
+  --button-bg: #6C5B7B;
+  --button-hover: #5E4754;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #1A1A2E;
+  --text-color: #FFF;
+  --accent-color: #4B8F8C;
+  --secondary-text-color: #CCC;
+  --button-bg: #4B8F8C;
+  --button-hover: #3A6A68;
+  --border-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+
+  padding-top: 50px; /* Offset the fixed header */
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+  padding: 20px 5%; /* Reduced padding */
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  max-width: 100%; /* Ensure content doesn't overflow */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header (Nav) Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px; /* Minimized padding */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  z-index: 1000;
+  box-shadow: 0 4px 8px var(--shadow-color); /* Slight shadow for depth */
+  height: 50px; /* Fixed height */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 12px; /* Reduced margin */
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px; /* Reduced font size */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+  transform: scale(1.05); /* Slightly reduced hover scale */
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+    padding: 8px 0; /* Reduced padding */
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav li {
+    margin: 8px 0; /* Reduced margin */
+  }
+}
+
+/* Button Styling */
+button {
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: white;
+  box-shadow: 0px 4px 10px var(--shadow-color);
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  margin: 8px;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 14px var(--shadow-color);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+button.secondary:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  section {
+    padding: 10px 5%; /* Reduced padding for small screens */
+  }
+  h1 {
+    font-size: 1.6rem; /* Reduced font size for smaller screens */
+  }
+  p {
+    font-size: 0.9rem; /* Reduced font size for smaller screens */
+  }
+  button {
+    padding: 6px 15px; /* Reduced button padding for smaller screens */
+    font-size: 0.8rem; /* Reduced font size for smaller screens */
+  }
+}

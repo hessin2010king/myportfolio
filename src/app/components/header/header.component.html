@@ -1,0 +1,18 @@
+<nav>
+  <div class="menu-icon" (click)="toggleMenu()">☰</div>
+  <ul [class.show]="menuOpen">
+    <li><a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
+    <li><a routerLink="/skills" routerLinkActive="active" (click)="closeMenu()">Skills</a></li>
+    <li><a routerLink="/experience" routerLinkActive="active" (click)="closeMenu()">Experience</a></li>
+    <li><a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a></li>
+  </ul>
+  <button (click)="toggleTheme()"
+  [title]="currentTheme === 'dark' ? 'Light Mode' : 'Dark Mode'"
+  class="theme-toggle-btn">
+<i [class]="currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon'"></i>
+</button>
+
+
+</nav>

@@ -1,0 +1,120 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px  ; /* Reduced padding */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin-right: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li { margin: 0 12px; } /* Reduced margin */
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px; /* Reduced font size */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+  transform: scale(1.05); /* Slightly reduced hover scale */
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon { display: block; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Adjusted top position */
+    left: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+    padding: 8px 0; /* Reduced padding */
+  }
+  nav ul.show { display: flex; }
+  nav li { margin: 8px 0; } /* Reduced margin */
+}
+
+/* Overall button styling */
+button.theme-toggle-btn {
+  background-color: transparent;
+  border: none;
+  padding: 8px; /* Reduced padding */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  outline: none;
+}
+
+/* Light mode - Sun icon */
+body.light-mode button.theme-toggle-btn i {
+  color: #000000; /* Dark color for the icon in light mode */
+
+}
+
+/* Dark mode - Moon icon */
+body.dark-mode button.theme-toggle-btn i {
+  color: #FFF; /* Light color for the icon in dark mode */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+
+}
+
+/* Button hover effect */
+button.theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle background on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+
+/* Active button effect (when clicked) */
+button.theme-toggle-btn:active {
+  transform: scale(0.98); /* Slight scale-down effect when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Less shadow when pressed */
+}
+
+/* Icon transition */
+button.theme-toggle-btn i {
+  font-size: 24px; /* Reduced icon size */
+  transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Light Mode Adjustments */
+body.light-mode button.theme-toggle-btn {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+
+/* Smooth icon change on theme toggle */
+body.light-mode button.theme-toggle-btn i {
+  transform: rotate(0deg); /* Start at 0deg */
+}
+
+body.dark-mode button.theme-toggle-btn i {
+  transform: rotate(180deg); /* Rotate icon to enhance the transition effect */
+}
+
+/* Light mode hover effect */
+body.light-mode button.theme-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle background on hover */
+  transform: scale(1.1); /* Slightly bigger button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}

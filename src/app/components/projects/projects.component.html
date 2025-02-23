@@ -11,10 +11,10 @@
           <h3>{{ project.name }}</h3>
           <p>{{ project.description }}</p>
           <div class="buttons">
-            <button (click)="openSlider(project.images)">
+            <button *ngIf="project.images && project.images.length > 0" (click)="openSlider(project.images)">
               <i class="fas fa-eye"></i> View
             </button>
-            <button (click)="openDemoLink(project.demo)">
+            <button *ngIf="project.demo" (click)="openDemoLink(project.demo)">
               <i class="fas fa-external-link-alt"></i> Demo
             </button>
           </div>

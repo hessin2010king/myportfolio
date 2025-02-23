@@ -29,8 +29,7 @@ export class ProjectsComponent {
       description: "A digital library management system.",
       image: "assets/projects/alexlibrary.png",
       images: [
-        "assets/projects/alexlibrary.jpg",
-        "assets/projects/alexlibrary2.jpg"
+        "assets/projects/alexlibrary.png",
       ],
       demo: "https://master--alexlibrary.netlify.app/home"
     },
@@ -39,8 +38,7 @@ export class ProjectsComponent {
       description: "Landing template for clinic's purposes.",
       image: "assets/projects/clinico.jpg",
       images: [
-        "assets/projects/clinico.jpg",
-        "assets/projects/clinico2.jpg"
+        "assets/projects/clinico.jpg"
       ],
       demo: "https://clinico-two.vercel.app/"
     },
@@ -49,8 +47,7 @@ export class ProjectsComponent {
       description: "A platform connecting investors and startups.",
       image: "assets/projects/equihub.png",
       images: [
-        "assets/projects/equihub.jpg",
-        "assets/projects/equihub2.jpg"
+        "assets/projects/equihub.jpg"
       ],
       demo: "https://equihub.co"
     },
@@ -63,6 +60,15 @@ export class ProjectsComponent {
         "assets/projects/atiiq2.png"
       ],
       demo: "https://atiiq.com/"
+    },
+    {
+      name: "ITI Book Shop",
+      description: "Book Store",
+      image: "assets/projects/iti-book-shop.png",
+      images: [
+        "assets/projects/iti-book-shop.png",
+      ],
+      demo: "https://angular-node-js-one.vercel.app/Welcome"
     }
   ];
 

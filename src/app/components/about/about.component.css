@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 2s ease-out forwards; /* 'forwards' ensures it stays visible after animation */
+  animation: fadeIn 2s ease-out forwards;
 }
 
 #about .container {
@@ -28,7 +28,7 @@
   justify-content: center;
   gap: 10px;
   transform: translateY(-20px);
-  animation: slideIn 1.5s ease-out forwards; /* 'forwards' keeps the final state after animation */
+  animation: slideIn 1.5s ease-out forwards;
 }
 
 #about .header .sub-heading {

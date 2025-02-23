@@ -41,7 +41,7 @@ body {
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: auto; /* Prevent scrolling */
 
   padding-top: 50px; /* Offset the fixed header */
 }

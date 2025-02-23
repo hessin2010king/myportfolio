@@ -13,29 +13,29 @@ export class ProjectsComponent {
     {
       name: "Eventoria",
       description: "An event management platform with multi-role functionality.",
-      image: "assets/profile.jpg",
+      image: "assets/projects/eventoria.png",
       images: [
-        "assets/profile.jpg",
+        "assets/projects/eventoria.jpg",
         "assets/projects/eventoria2.jpg"
       ],
-      demo: "https://eventoria.com"
+      demo: "https://events-app-black-seven.vercel.app/home"
     },
     {
       name: "Alex-Library",
       description: "A digital library management system.",
-      image: "assets/projects/alexlibrary.jpg",
+      image: "assets/projects/alexlibrary.png",
       images: [
-        "assets/projects/alexlibrary1.jpg",
+        "assets/projects/alexlibrary.jpg",
         "assets/projects/alexlibrary2.jpg"
       ],
-      demo: "https://alexlibrary.com"
+      demo: "https://master--alexlibrary.netlify.app/home"
     },
     {
       name: "Clinico",
       description: "Landing template for clinic's purposes.",
       image: "assets/projects/clinico.jpg",
       images: [
-        "assets/projects/clinico1.jpg",
+        "assets/projects/clinico.jpg",
         "assets/projects/clinico2.jpg"
       ],
       demo: "https://clinico-two.vercel.app/"
@@ -53,12 +53,42 @@ export class ProjectsComponent {
     {
       name: "EquiHub",
       description: "A platform connecting investors and startups.",
-      image: "assets/projects/equihub.jpg",
+      image: "assets/projects/equihub.png",
       images: [
-        "assets/projects/equihub1.jpg",
+        "assets/projects/equihub.jpg",
         "assets/projects/equihub2.jpg"
       ],
-      demo: "https://equihub.com"
+      demo: "https://equihub.co"
+    },
+    {
+      name: "EquiHub",
+      description: "A platform connecting investors and startups.",
+      image: "assets/projects/equihub.png",
+      images: [
+        "assets/projects/equihub.jpg",
+        "assets/projects/equihub2.jpg"
+      ],
+      demo: "https://equihub.co"
+    },
+    {
+      name: "EquiHub",
+      description: "A platform connecting investors and startups.",
+      image: "assets/projects/equihub.png",
+      images: [
+        "assets/projects/equihub.jpg",
+        "assets/projects/equihub2.jpg"
+      ],
+      demo: "https://equihub.co"
+    },
+    {
+      name: "EquiHub",
+      description: "A platform connecting investors and startups.",
+      image: "assets/projects/equihub.png",
+      images: [
+        "assets/projects/equihub.jpg",
+        "assets/projects/equihub2.jpg"
+      ],
+      demo: "https://equihub.co"
     }
   ];
 

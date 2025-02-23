@@ -15,8 +15,12 @@ export class ProjectsComponent {
       description: "An event management platform with multi-role functionality.",
       image: "assets/projects/eventoria.png",
       images: [
-        "assets/projects/eventoria.jpg",
-        "assets/projects/eventoria2.jpg"
+        "assets/projects/eventoria1.png",
+        "assets/projects/eventoria2.png",
+        "assets/projects/eventoria3.png",
+        "assets/projects/eventoria4.png",
+        "assets/projects/eventoria5.png",
+        "assets/projects/eventoria6.png"
       ],
       demo: "https://events-app-black-seven.vercel.app/home"
     },

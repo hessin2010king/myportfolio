@@ -7,7 +7,7 @@
 
 /* Container */
 #contact .container {
-  max-width: 800px;
+  max-width: 1200px; /* زيادة الحجم عشان يتناسب مع العمودين */
   margin: auto;
 }
 
@@ -28,15 +28,25 @@
 /* Contact Info */
 .contact-info {
   display: flex;
+  justify-content: space-between; /* الفسح بين الأعمدة */
+  gap: 30px;
   flex-wrap: wrap;
+}
+
+/* Contact Column */
+.contact-column {
+  flex: 1;
+  min-width: 280px; /* خلي الأعمدة صغيرة عشان تناسب كل الشاشات */
+  text-align: center;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
 }
 
 /* Contact Items */
 .contact-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   background: var(--card-bg);
   padding: 12px 20px;

@@ -45,46 +45,6 @@ export class ProjectsComponent {
       demo: "https://clinico-two.vercel.app/"
     },
     {
-      name: "Dynamic Portfolio",
-      description: "A dynamic portfolio system allowing easy edits without coding.",
-      image: "assets/projects/portfolio.jpg",
-      images: [
-        "assets/projects/portfolio1.jpg",
-        "assets/projects/portfolio2.jpg"
-      ],
-      demo: "https://dynamicportfolio.com"
-    },
-    {
-      name: "EquiHub",
-      description: "A platform connecting investors and startups.",
-      image: "assets/projects/equihub.png",
-      images: [
-        "assets/projects/equihub.jpg",
-        "assets/projects/equihub2.jpg"
-      ],
-      demo: "https://equihub.co"
-    },
-    {
-      name: "EquiHub",
-      description: "A platform connecting investors and startups.",
-      image: "assets/projects/equihub.png",
-      images: [
-        "assets/projects/equihub.jpg",
-        "assets/projects/equihub2.jpg"
-      ],
-      demo: "https://equihub.co"
-    },
-    {
-      name: "EquiHub",
-      description: "A platform connecting investors and startups.",
-      image: "assets/projects/equihub.png",
-      images: [
-        "assets/projects/equihub.jpg",
-        "assets/projects/equihub2.jpg"
-      ],
-      demo: "https://equihub.co"
-    },
-    {
       name: "EquiHub",
       description: "A platform connecting investors and startups.",
       image: "assets/projects/equihub.png",

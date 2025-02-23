@@ -10,15 +10,9 @@ import { ThemeService } from '../../services/theme.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   menuOpen = false;
-  currentTheme: string = 'light';
-
-  constructor(private themeService: ThemeService) {}
-
-  ngOnInit() {
-    this.currentTheme = this.themeService.getTheme();
-  }
+  currentTheme: string = 'light'; // Default theme
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -29,7 +23,15 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleTheme() {
-    this.themeService.toggleTheme();
-    this.currentTheme = this.themeService.getTheme();
+    if (this.currentTheme === 'light') {
+      this.currentTheme = 'dark';
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+    } else {
+      this.currentTheme = 'light';
+      document.body.classList.add('light-mode');
+      document.body.classList.remove('dark-mode');
+    }
   }
 }
+

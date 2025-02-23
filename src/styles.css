@@ -43,7 +43,6 @@ body {
   padding: 0;
   overflow: auto; /* Prevent scrolling */
 
-  padding-top: 50px; /* Offset the fixed header */
 }
 
 h1, h2, h3, h4 {

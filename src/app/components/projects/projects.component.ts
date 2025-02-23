@@ -53,6 +53,16 @@ export class ProjectsComponent {
         "assets/projects/equihub2.jpg"
       ],
       demo: "https://equihub.co"
+    },
+    {
+      name: "Atiiq",
+      description: "",
+      image: "assets/projects/atiiq.png",
+      images: [
+        "assets/projects/atiiq1.png",
+        "assets/projects/atiiq2.png"
+      ],
+      demo: "https://atiiq.com/"
     }
   ];
 
